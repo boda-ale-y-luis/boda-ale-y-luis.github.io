@@ -316,7 +316,7 @@
   <a href="intent://boda-ale-y-luis.github.io/#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=https%3A%2F%2Fboda-ale-y-luis.github.io%2F;end" style="display:inline-block;margin-top:8px;background:#334628;color:#FFFCF0;text-decoration:none;font-weight:700;padding:9px 18px;border-radius:999px">Abrir en Chrome</a>
 </div>
 <script>
-(function(){try{var dark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var ua=navigator.userAgent||'';var isAndroid=/Android/i.test(ua);var inWA=/WhatsApp/i.test(ua);if(isAndroid&&(dark||inWA)){var b=document.getElementById('chrome-banner');if(b)b.style.display='block';}}catch(e){}})();
+(function(){try{var ua=navigator.userAgent||'';var isAndroid=/Android/i.test(ua);if(isAndroid){var b=document.getElementById('chrome-banner');if(b)b.style.display='block';}}catch(e){}})();
 </script>
 
 
