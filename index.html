@@ -65,20 +65,19 @@
   .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(26,20,10,.93) 0%,rgba(30,24,12,.78) 38%,rgba(34,28,14,.55) 62%,rgba(40,32,16,.38) 100%)}
   .hero-inner{position:relative;z-index:2;padding:110px 20px 56px;max-width:760px;width:100%;margin:0 auto;text-align:center}
-  .hero .over{display:table;margin:0 auto 14px;padding:0;color:#E9D9A8;font-family:"Cormorant Garamond",serif;letter-spacing:.42em;text-indent:.42em;text-transform:uppercase;font-size:1.06rem;font-weight:700;text-shadow:0 2px 8px rgba(0,0,0,.9),0 4px 22px rgba(0,0,0,.85)}
+  .hero .over{display:table;margin:0 auto 14px;padding:0;color:#E9D9A8;font-family:"Jost",system-ui,sans-serif;letter-spacing:.38em;text-indent:.38em;text-transform:uppercase;font-size:0.95rem;font-weight:400;text-shadow:0 2px 8px rgba(0,0,0,.9),0 4px 22px rgba(0,0,0,.85)}
   .hero h1,.hero h1 span{font-family:"Great Vibes",cursive}
   .hero h1{font-size:clamp(3.264rem,10.5vw,6.144rem);line-height:1.18;padding:.08em .15em 0;font-weight:400;text-shadow:0 2px 6px rgba(0,0,0,.85),0 6px 34px rgba(0,0,0,.75)}
   .hero .amp{display:block;font-size:.45em;margin:-.15em 0}
-  .hero .date-line{font-family:"Cormorant Garamond",serif;font-size:clamp(1.2rem,3.4vw,1.632rem);letter-spacing:.22em;text-transform:uppercase;white-space:nowrap;font-variant-numeric:lining-nums;margin:16px 0 4px;text-shadow:0 2px 8px rgba(0,0,0,.9),0 4px 22px rgba(0,0,0,.8)}
+  .hero .date-line{font-family:"Cormorant Garamond",serif;font-size:clamp(1.2rem,3.4vw,1.632rem);letter-spacing:.22em;text-transform:uppercase;white-space:nowrap;font-variant-numeric:lining-nums;color:#E9D9A8;margin:16px 0 0;padding-left:.22em;text-shadow:0 2px 8px rgba(0,0,0,.9),0 4px 22px rgba(0,0,0,.8)}
 .hero .date-line .year{font-size:1em;font-variant-numeric:lining-nums}
-  .hero .place-line{letter-spacing:.18em;text-transform:uppercase;font-size:.85rem;opacity:1;text-shadow:0 2px 8px rgba(0,0,0,.9),0 4px 20px rgba(0,0,0,.8)}
+  .hero .place-line{letter-spacing:.18em;padding-left:.18em;text-transform:uppercase;font-size:.85rem;opacity:1;text-shadow:0 2px 8px rgba(0,0,0,.9),0 4px 20px rgba(0,0,0,.8)}
   .rule{display:flex;align-items:center;gap:14px;justify-content:center;margin:20px auto;max-width:340px}
   .rule::before,.rule::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,#E9D9A8,transparent)}
-  .rule span{color:#E9D9A8;font-size:1rem}
-  .countdown{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px}
-  .countdown .cell{background:rgba(24,20,10,.55);border:1px solid rgba(255,240,220,.55);border-radius:14px;min-width:74px;padding:10px 8px 8px;backdrop-filter:blur(4px)}
+    .countdown{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+  .countdown .cell{background:rgba(24,20,10,.55);border:1px solid #E9D9A8;border-radius:14px;min-width:74px;padding:10px 8px 8px;backdrop-filter:blur(4px)}
   .countdown .num{font-family:"Cormorant Garamond",serif;font-size:1.9rem;line-height:1;font-weight:600;text-shadow:0 2px 8px rgba(0,0,0,.85)}
-  .countdown .lab{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;opacity:1;text-shadow:0 1px 6px rgba(0,0,0,.85)}
+  .countdown .lab{font-size:.68rem;letter-spacing:.24em;padding-left:.24em;text-transform:uppercase;opacity:1;text-shadow:0 1px 6px rgba(0,0,0,.85)}
   .hero .cta{margin:26px auto 0;width:100%;display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap;text-align:center}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 26px;text-decoration:none;font-size:.92rem;letter-spacing:.06em;cursor:pointer;border:1px solid transparent;font-family:inherit;font-weight:400;transition:transform .15s ease,box-shadow .15s ease}
   .btn:hover{transform:translateY(-1px)}
@@ -117,7 +116,7 @@
 
   /* ---------- Encuadre de las fotos (personas centradas, sin recortar cabezas ni manos) ---------- */
   .photo-slot img{object-fit:cover;object-position:center center}
-  #img-hero{object-position:32% 44%}
+  #img-hero{object-position:45% 44%}
   #img-g1{object-position:35% 50%}
   #img-g2{object-position:50% 20%}
   #img-g3{object-position:50% 15%}
@@ -330,7 +329,7 @@
   <div class="hero-inner">
     <p class="over">¡Nos casamos!</p>
     <h1 class="script"><span>Alejandra Varela</span> <span class="amp">&amp;</span> <span>Luis Ascencio</span></h1>
-    <div class="rule"><span>❦</span></div>
+    <div class="rule"></div>
     <p class="date-line" id="heroDate">Sábado · 16 de enero de <span class="year">2027</span></p>
     <p class="place-line">Tetela del Monte, Cuernavaca, Morelos</p>
     <div class="countdown" role="timer" aria-label="Cuenta regresiva para la boda">
