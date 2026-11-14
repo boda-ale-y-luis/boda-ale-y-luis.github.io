@@ -20,10 +20,10 @@
   a{display:inline-block;margin-top:24px;background:#334628;color:#F5EED8;text-decoration:none;padding:14px 28px;border-radius:999px;font-size:1.1rem}
 </style>
 <script>
-  var museUrl = "https://muse.ai/s/invitacion-de-boda-ale-y-luis-wxx6x0xpxynpuxkxs/4I-zFQ1Ai57YMEaUC6cN5t5FN1lEZxGY3HSbfCiglHc?v=chrome";
-  var intentUrl = "intent://muse.ai/s/invitacion-de-boda-ale-y-luis-wxx6x0xpxynpuxkxs/4I-zFQ1Ai57YMEaUC6cN5t5FN1lEZxGY3HSbfCiglHc?v=chrome#Intent;scheme=https;package=com.android.chrome;end";
+  var siteUrl = "https://boda-ale-y-luis.github.io/?v=boton";
+  var intentUrl = "intent://boda-ale-y-luis.github.io/?v=boton#Intent;scheme=https;package=com.android.chrome;end";
   var isAndroid = /Android/i.test(navigator.userAgent);
-  var target = isAndroid ? intentUrl : museUrl;
+  var target = isAndroid ? intentUrl : siteUrl;
   window.location.replace(target);
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.getElementById("openBtn");
@@ -36,6 +36,6 @@
 <body>
   <h1 id="msg">Abriendo la invitación…</h1>
   <p>Si no se abre sola, toca el botón:</p>
-  <a id="openBtn" href="https://muse.ai/s/invitacion-de-boda-ale-y-luis-wxx6x0xpxynpuxkxs/4I-zFQ1Ai57YMEaUC6cN5t5FN1lEZxGY3HSbfCiglHc?v=chrome">Abrir invitación</a>
+  <a id="openBtn" href="https://boda-ale-y-luis.github.io/?v=boton">Abrir invitación</a>
 </body>
 </html>
