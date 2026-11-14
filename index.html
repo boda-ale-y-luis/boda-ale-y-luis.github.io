@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="color-scheme" content="light dark" />
-<meta name="supported-color-schemes" content="light dark" />
+<meta name="color-scheme" content="light only" />
+<meta name="supported-color-schemes" content="light only" />
 <meta name="theme-color" content="#F5EED8" />
 <link rel="icon" href="data:," />
 <title>Invitación de boda Ale y Luis</title>
@@ -35,7 +35,7 @@
      amarillo mantequilla #EEDC9A, dorado suave #A9853F, beige #E9D9A8.
      Sin rosa, sin guinda y sin fondo verde en ninguna sección. */
   :root{
-    color-scheme:light dark !important;
+    color-scheme:light only !important;
     forced-color-adjust:none;
     --bg:#F5EED8; --bg-soft:#EADFC0; --card:#FFFCF0;
     --ink:#2E2C1E; --ink-soft:#6D6752; --line:#DFD3A8;
@@ -46,8 +46,8 @@
   }
   *,*::before,*::after{forced-color-adjust:none !important}
   *{box-sizing:border-box}
-  html{color-scheme:light dark !important;forced-color-adjust:none !important;background:#F5EED8 !important;background-color:#F5EED8 !important;scroll-behavior:smooth}
-  body{margin:0;background:#F5EED8 !important;background-color:#F5EED8 !important;color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-weight:300;line-height:1.65;forced-color-adjust:none !important;color-scheme:light dark !important}
+  html{color-scheme:light only !important;forced-color-adjust:none !important;background:#F5EED8 !important;background-color:#F5EED8 !important;scroll-behavior:smooth}
+  body{margin:0;background:#F5EED8 !important;background-color:#F5EED8 !important;color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-weight:300;line-height:1.65;forced-color-adjust:none !important;color-scheme:light only !important}
   button,[role="button"],select,summary,input:not([type="checkbox"],[type="radio"]),a.btn{min-height:2.25rem}
   img{display:block;max-width:100%}
   h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500;margin:0}
@@ -90,7 +90,7 @@
 
   /* ---------- Sections ---------- */
   section,header,footer,nav,main,article,div{forced-color-adjust:none !important}
-  section{padding:84px 0;background:#F5EED8 !important;background-color:#F5EED8 !important;forced-color-adjust:none !important;color-scheme:light dark !important}
+  section{padding:84px 0;background:#F5EED8 !important;background-color:#F5EED8 !important;forced-color-adjust:none !important;color-scheme:light only !important}
   section.soft{background:#EADFC0 !important;background-color:#EADFC0 !important;forced-color-adjust:none !important}
   .sec-head{text-align:center;max-width:640px;margin:0 auto 44px}
   .sec-head .orn{color:var(--gold);font-size:1.3rem;letter-spacing:.6em;margin-bottom:6px}
@@ -237,9 +237,9 @@
   footer{background:#EADFC0 !important;background-color:#EADFC0 !important;forced-color-adjust:none !important}
   nav.site{background:#F5EED8 !important;background-color:#F5EED8 !important;forced-color-adjust:none !important}
   @media (prefers-color-scheme: dark){
-    :root,html{color-scheme:light dark !important;forced-color-adjust:none !important;background:#F5EED8 !important;background-color:#F5EED8 !important}
+    :root,html{color-scheme:light only !important;forced-color-adjust:none !important;background:#F5EED8 !important;background-color:#F5EED8 !important}
     html *,html *::before,html *::after{forced-color-adjust:none !important}
-    body{background:#F5EED8 !important;background-color:#F5EED8 !important;color:#2E2C1E !important;forced-color-adjust:none !important;color-scheme:light dark !important}
+    body{background:#F5EED8 !important;background-color:#F5EED8 !important;color:#2E2C1E !important;forced-color-adjust:none !important;color-scheme:light only !important}
     section{background:#F5EED8 !important;background-color:#F5EED8 !important;forced-color-adjust:none !important}
     section.soft,footer{background:#EADFC0 !important;background-color:#EADFC0 !important;forced-color-adjust:none !important}
     nav.site{background:#F5EED8 !important;background-color:#F5EED8 !important}
@@ -277,14 +277,14 @@
 (function(){
   function fixLight(){
     try{
-      document.documentElement.style.colorScheme = 'light dark';
-      document.documentElement.style.setProperty('color-scheme','light dark','important');
+      document.documentElement.style.colorScheme = 'light';
+      document.documentElement.style.setProperty('color-scheme','light only','important');
       document.documentElement.style.setProperty('background','#F5EED8','important');
       document.documentElement.style.setProperty('background-color','#F5EED8','important');
       document.documentElement.style.setProperty('forced-color-adjust','none','important');
       var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
       if (document.body){
-        document.body.style.setProperty('color-scheme','light dark','important');
+        document.body.style.setProperty('color-scheme','light only','important');
         document.body.style.setProperty('forced-color-adjust','none','important');
         if (isDark || true){
           document.body.style.setProperty('background','#F5EED8','important');
@@ -536,7 +536,7 @@
   "use strict";
   /* Reafirmar fondo claro al cargar, aunque el sistema esté en modo oscuro */
   try{
-    document.documentElement.style.colorScheme = 'light dark';
+    document.documentElement.style.colorScheme = 'light';
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
       document.documentElement.style.setProperty('background','#F5EED8','important');
       document.documentElement.style.setProperty('background-color','#F5EED8','important');
